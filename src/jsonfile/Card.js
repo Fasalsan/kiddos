@@ -11,19 +11,19 @@ const Card = [
         dis: "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic."
     },
     {
-        id: 1,
+        id: 2,
         icon: <MdOutlineMenuBook />,
         title: "Certified Teachers",
         dis: "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic."
     },
     {
-        id: 1,
+        id: 3,
         icon: <GrCertificate />,
         title: "Certified Teachers",
         dis: "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic."
     },
     {
-        id: 1,
+        id: 4,
         icon: <GiBookAura />,
         title: "Certified Teachers",
         dis: "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic."
