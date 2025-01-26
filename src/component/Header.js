@@ -52,22 +52,12 @@ export default function Header() {
   const handleNav = () => {
     setNav(!nav);
   };
-
-  // Array containing navigation items
-  const navItems = [
-    { id: 1, text: 'Home' },
-    { id: 2, text: 'Company' },
-    { id: 3, text: 'Resources' },
-    { id: 4, text: 'About' },
-    { id: 5, text: 'Contact' },
-  ];
   return (
     <>
       <div className='sticky top-0 z-50'>
-        <div className='bg-gradient-to-r from-primary to-secondary'>
-          <div className=' container'>
+        <div className='bg-[#0287a8] ms:flex flex-col lg:flex-row gap-3 justify-between py-2 text-white lg:block hidden z-50'>
+          <div className=' container '>
             <div className='flex flex-col lg:flex-row gap-3 justify-between py-2 text-white'>
-
               <div className='flex gap-2 items-center'>
                 <GiBookCover className='text-[30px] text-white bg-purple-600 p-1 rounded-full' />
                 <p>198 West 21th Street, Suite 721 New York NY 10016</p>
@@ -83,84 +73,6 @@ export default function Header() {
             </div>
           </div>
         </div>
-
-        {/* <div className=' bg-white shadow-lg py-4'>
-          <div className='container'>
-            <div className='flex justify-between items-center'>
-              <Link>
-                <h1 className='text-[30px] font-extrabold'>KIDDOS</h1>
-              </Link>
-              <ul className='flex gap-7'>
-                {
-                  nav && nav.map((d, i) => {
-                    return (
-                      <div key={i}>
-                        <li>
-                          <NavLink
-                            className={({ isActive }) =>
-                              isActive ? 'text-[#0287a8] border-b-2 border-[#0287a8] p-1 font-bold' : 'hover:border-b-2 border-[#0287a8] p-1'
-                            }
-                            to={d.link}>{d.title}</NavLink>
-                        </li>
-                      </div>  
-                    )
-                  })
-                } 
-              </ul>
-            </div>
-          </div>
-        </div> */}
-
-
-
-        {/* <nav className="shadow-lg py-7 bg-white">
-
-          <div className="container mx-auto flex justify-between items-center">
-            <div className='text-[30px] font-extrabold'>KIDDOS</div>
-            <ul className="hidden md:flex space-x-4">
-              {
-                nav && nav.map((d, i) => {
-                  return (
-                    <div key={i}>
-                      <li>
-                        <NavLink
-                          className={({ isActive }) =>
-                            isActive ? 'text-[#0287a8] border-b-2 border-[#0287a8] p-1 font-bold' : 'hover:border-b-2 border-[#0287a8] p-1'
-                          }
-                          to={d.link}>{d.title}</NavLink>
-                      </li>
-                    </div>
-                  )
-                })
-              }
-
-            </ul>
-            <button onClick={toggleMenu} className="md:hidden text-white focus:outline-none">
-              {isOpen ? <IoMdClose className='text-[30px] text-black' /> : <IoReorderThreeSharp className='text-[30px] text-black' />}
-            </button>
-          </div>
-
-
-          <div className={`md:hidden ${isOpen ? 'block' : 'hidden'}`}>
-            <ul className='bg-white flex flex-col gap-4 px-7 py-4 '>
-              {
-                nav && nav.map((d, i) => {
-                  return (
-                    <div key={i}>
-                      <li>
-                        <NavLink
-                          className={({ isActive }) =>
-                            isActive ? 'text-[#0287a8] border-b-2 border-[#0287a8] p-1 font-bold' : 'text-black hover:border-b-2 border-[#0287a8] p-1'
-                          }
-                          to={d.link}>{d.title}</NavLink>
-                      </li>
-                    </div>
-                  )
-                })
-              }
-            </ul>
-          </div>
-        </nav > */}
 
         <div className='bg-white flex justify-between items-center h-24 w-full md:px-12 px-4 mx-auto py-4 text-white shadow-xl'>
           {/* Logo */}
